@@ -1,15 +1,41 @@
 body {
-    background-color: rgb(51, 51, 51)
-    
+    background-color: rgb(51, 51, 51);
+    background-image: linear-gradient(rgb(51, 51, 51), rgb(0, 0, 0));
+
+}
+
+img {
+    z-index: 0;
+    position: absolute;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    top: 0%;
+    right: 0%;
 }
 
 #title-border{
-    background-color: rgb(90, 90, 90);
+    position: relative;
+    background-color: rgb(151, 151, 151);
+    font-family: courier new;
     text-align: center;
     padding: 0.1em;
-    font-size: 1.5em;
-    width: 100%;
-    top: 100%;
+    font-size: 1.2em;
+    width: 100.5%;
+    top: 25%;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+#gameBackground{
+    visibility: hidden;
+    background-color: yellowgreen;
+    position: absolute;
+    height: 10px;
+    width: 40%;
+    border: 5px solid green;
+    border-radius: 15px;
+    right: 30%;
+    bottom: 45%;  
 }
 
 .loading{
@@ -44,6 +70,33 @@ body {
 
 #Pbtn:hover {
     background-color: green;
+    border-color: darkgreen;
+}
+
+#loading #color{
+    position: absolute;
+    background-color: #ffffff;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+@keyframes progress{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 55%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 95%;
+    }
+    100%{
+        width: 100%;
+    }
 }
 
 @keyframes Loading {
@@ -72,41 +125,37 @@ body {
     }
 }
 
-
-
-/* .loading{
-    background-color: yellowgreen;
-    position: absolute;
-    height: 10px;
-    width: 40%;
-    border: 10px solid green;
-    border-radius: 15px;
-    right: 30%;
-    bottom: 45%;
-} */
-
-#loading #color{
-    position: absolute;
-    background-color: #ffffff;
-    width: 0px;
-    height: 10px;
-    border-radius: 15px;
-}
-
-@keyframes progress{
+@keyframes GameBackground{
     0%{
-      width: 0%;
-    }
-    25%{
-        width: 55%;
-    }
-    50%{
-        width: 75%;
-    }
-    75%{
-        width: 95%;
+        background-color: yellowgreen;
+        position: absolute;
+        height: 10px;
+        width: 40%;
+        border: 5px solid green;
+        border-radius: 15px;
+        right: 30%;
+        bottom: 45%;  
+        color: transparent;
     }
     100%{
-        width: 100%;
+        background-color: rgb(12, 12, 12);
+        border-color: black;
+        width: 85%;
+        height: 79%;
+        right: 150px;
+        bottom: 55px;
     }
-};
+}
+
+@keyframes BorderWalk{
+    0%{
+        top: 25%;
+    }
+    25%{
+        top: 25%;
+    }
+    100%{
+        top: 0%;
+        z-index: 1;
+    }
+}
