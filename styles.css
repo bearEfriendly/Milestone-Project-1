@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(51, 51, 51)
+    
+}
+
+#title-border{
+    background-color: rgb(90, 90, 90);
+    text-align: center;
+    padding: 0.1em;
+    font-size: 1.5em;
+    width: 100%;
+    top: 100%;
+}
+
+.loading{
+    position: absolute;
+    background-color: yellowgreen;
+    border-radius: 25px;
+    margin: auto;
+    width: 18%;
+    height: 6%;
+    border: 5px solid green;
+    padding: 10px;
+    right: 40%;
+    bottom: 50%;
+}
+
+#Pbtn {
+    position: absolute;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 25px;
+    margin: auto;
+    width: 20%;
+    height: 9%;
+    border: 5px solid green;
+    padding: 10px;
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    right: 40%;
+    bottom: 50%;
+    
+}
+
+#Pbtn:hover {
+    background-color: green;
+}
+
+@keyframes Loading {
+    0%{
+        position: absolute;
+        background-color: yellowgreen;
+        border-radius: 25px;
+        margin: auto;
+        width: 18%;
+        height: 6%;
+        border: 5px solid green;
+        padding: 10px;
+        right: 40%;
+        bottom: 50%;
+    }
+    100%{
+        background-color: yellowgreen;
+        position: absolute;
+        height: 10px;
+        width: 40%;
+        border: 5px solid green;
+        border-radius: 15px;
+        right: 30%;
+        bottom: 45%;  
+        color: transparent;
+    }
+}
+
+
+
+/* .loading{
+    background-color: yellowgreen;
+    position: absolute;
+    height: 10px;
+    width: 40%;
+    border: 10px solid green;
+    border-radius: 15px;
+    right: 30%;
+    bottom: 45%;
+} */
+
+#loading #color{
+    position: absolute;
+    background-color: #ffffff;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+@keyframes progress{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 55%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 95%;
+    }
+    100%{
+        width: 100%;
+    }
+};
