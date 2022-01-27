@@ -1,3 +1,7 @@
+let isMute = false
+let audio = new Audio('assets/backgroundMusic.mp3')
+
+// Loading animation when start button pressed
 function LoadingAnim() {
     document.getElementById('Pbtn').style.visibility = "hidden"
     document.getElementById('loading').style.animation = "Loading 1s linear forwards";
@@ -5,9 +9,29 @@ function LoadingAnim() {
     document.getElementById('color').style.animationDelay = "1s";
     setTimeout(() => { 
         document.getElementById('loading').style.visibility = "hidden";
-        document.getElementById('gameBackground').style.visibility = "visible";
-        console.log('howdy')
-        document.getElementById('gameBackground').style.animation = "GameBackground 2s linear forwards";
+        document.getElementById('setupBackground').style.visibility = "visible";
+        document.getElementById('setupBackground').style.animation = "setupBackground 2s linear forwards";
         document.getElementById('title-border').style.animation = "BorderWalk 2s linear forwards";
+        document.getElementById("audioBtn").style.visibility = "visible"
+        audio.play()
     }, 6000);
+    setTimeout(() => {
+        document.getElementById('gameBackground').style.visibility = "visible";
+    }, 7900);
 }
+// AudioControler
+
+
+function muteAudio() {
+
+    if (isMute == false) {
+        // document.getElementById("backgroundAudio").muted = true;
+        audio.pause()
+        isMute = true
+    } else {
+        // document.getElementById('backgroundAudio').muted = false;
+        isMute = false
+        audio.play()
+    }
+}
+// Minesweeper code

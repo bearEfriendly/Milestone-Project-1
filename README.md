@@ -12,3 +12,41 @@ solo and Versus
 
 in solo mode just run normal minesweeper
 -----------------------------------------------------------------
+credits:
+
+“Music from https://www.zapsplat.com“
+
+
+
+
+
+
+
+-----------------------------------------------------------------
+strech goals:1
+
+before start:
+music
+make a 10 collum/ row board
+and a start button
+
+after start:
+music
+add a reset button
+back button top left
+--------------------------
+strech goals:2
+
+before start:
+make a difficulty selecter on the left side
+center shows you what the board looks like
+
+--------------------------
+strech goals:3
+
+before start:
+3 2player vs mode
+timers for (left, right, center)
+border down the middle
+darkening
+
