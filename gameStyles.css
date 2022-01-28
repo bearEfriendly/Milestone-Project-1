@@ -1,0 +1,82 @@
+#selectModeDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(17, 17, 17);
+    width: 99.5%;
+    height: 125px;
+    border: rgb(25, 25, 25) solid 3px;
+    border-radius: 15px;
+}
+
+#credits {
+    position: relative;
+    top: 550px;
+    left: 600px;
+    color: white;
+    background-color: rgb(25, 25, 25);
+    font-size: 20px;
+    margin: 5px;
+}
+
+#easyMode {
+    font-family: courier new;
+    background-color: green;
+    font-weight: bold;
+    border: solid 5px rgb(1, 37, 1);
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+    margin-top: 45px;
+}
+
+#easyMode:hover {
+    background-color: rgb(1, 70, 1);
+    color:white;
+    border: solid 5px rgb(1, 37, 1);
+    border-radius: 15px;
+    width: 215px;
+    height: 40px;
+}
+
+#mediumMode{
+    font-family: courier new;
+    font-weight: bold;
+    background-color: yellow;
+    color:rgb(104, 104, 104);
+    border: solid 5px orangered;
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+    margin-top: 45px;
+}
+
+#mediumMode:hover {
+    background-color: orange;
+    color:white;
+    border: solid 5px orangered;
+    border-radius: 15px;
+    width: 215px;
+    height: 40px;
+}
+
+#hardMode{
+    font-family: courier new;
+    background-color: red;
+    font-weight: bold;
+    color:black;
+    border: solid 5px maroon;
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+    margin-top: 45px;
+}
+
+#hardMode:hover{
+    background-color: rgb(163, 0, 0);
+    color:rgb(255, 255, 255);
+    border: solid 5px maroon;
+    border-radius: 15px;
+    width: 215px;
+    height: 40px;
+}

@@ -8,7 +8,7 @@ body {
     visibility: hidden;
 }
 
-img {
+#backGroundImg {
     min-width:300px;
     z-index: 0;
     position: fixed;
@@ -101,10 +101,9 @@ img {
 }
 
 #audioBtn:hover{
-    height: 50px;
-    width: 50px;
+    width: 55px;
+    height: 55px;
 }
-
 
 #gameBackground {
     visibility: hidden;
@@ -119,7 +118,6 @@ img {
     text-align: center;
     min-width:800px;
 }
-
 
 @media only screen and (max-width: 1850px), (max-height: 850px) {
   #screenTooSmall {

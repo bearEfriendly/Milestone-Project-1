@@ -19,19 +19,38 @@ function LoadingAnim() {
         document.getElementById('gameBackground').style.visibility = "visible";
     }, 7900);
 }
-// AudioControler
 
+
+// Audio code
+
+if (typeof audio.loop == 'boolean')
+{
+    audio.loop = true;
+}
+else
+{
+    myAudio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
 
 function muteAudio() {
 
     if (isMute == false) {
-        // document.getElementById("backgroundAudio").muted = true;
+        document.getElementById("audioBtn").src = "assets/mutedIcon.png"
         audio.pause()
         isMute = true
     } else {
-        // document.getElementById('backgroundAudio').muted = false;
+        document.getElementById("audioBtn").src = "assets/audioIcon.png"
         isMute = false
         audio.play()
     }
 }
+
+//selectMode code
+
+
+
+
 // Minesweeper code

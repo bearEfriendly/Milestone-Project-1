@@ -6,7 +6,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gameStyles.css">
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="gameApp.js"></script>
 </head>
 <body>
     <div id="screenTooSmall">
@@ -15,7 +17,7 @@
     <div id="title-border">
         <h1>2Mine2Sweeper</h1>
     </div>
-    <img src="assets/SeaMines.png" width="1920px" height="870">
+    <img id="backGroundImg" src="assets/SeaMines.png" width="1920px" height="870">
     <div>
         <div id="loading">
             <div id="color">
@@ -25,8 +27,16 @@
         <div id="setupBackground">
         </div>
         <div id="gameBackground">
+            <div id="selectModeDiv">
+                <button id="easyMode">Easy</button>
+                <button id="mediumMode">Medium</button>
+                <button id="hardmode">Hard</button>
+            </div>
+            <button id="credits">
+                Credits
+            </button>
         </div>
     </div>
-    <input id="audioBtn" type="image" src="assets/minimal-speaker-icon.png" name="audioBtn" class="btTxt submit" onclick="muteAudio()" />
+    <input id="audioBtn" type="image" src="assets/audioicon.png" name="audioBtn" class="btTxt submit" onclick="muteAudio()"/>
 </body>
 </html>
