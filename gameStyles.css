@@ -9,10 +9,52 @@
     border-radius: 15px;
 }
 
+#creditsP {
+    visibility: hidden;
+    color: white;
+    size: 30px;
+    font-family: courier new;
+}
+
+#backBtn {
+    visibility: hidden;
+    width: 165px;
+    height: 150px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#modeImg{
+    visibility: hidden;
+    margin-top: 50px;
+}
+
+#startGameBtn {
+    color: white;
+    font-family: courier new;
+    font-size: 20px;
+    position: absolute;
+    bottom: 80px;
+    right: 525px;
+    visibility: hidden;
+    border: 5px outset white;
+    background-color: green;
+    border-radius: 10px;
+    height: 75px;
+    width: 300px;
+}
+
+#startGameBtn:hover {
+    border: 5px inset white;
+    background-color: yellowgreen;
+}
+
+
 #credits {
-    position: relative;
-    top: 550px;
-    left: 600px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
     color: white;
     background-color: rgb(25, 25, 25);
     font-size: 20px;
@@ -25,8 +67,8 @@
     font-weight: bold;
     border: solid 5px rgb(1, 37, 1);
     border-radius: 15px;
-    width: 200px;
-    height: 25px;
+    width: 215px;
+    height: 40px;
     margin-top: 45px;
 }
 
@@ -46,8 +88,8 @@
     color:rgb(104, 104, 104);
     border: solid 5px orangered;
     border-radius: 15px;
-    width: 200px;
-    height: 25px;
+    width: 215px;
+    height: 40px;
     margin-top: 45px;
 }
 
@@ -67,8 +109,8 @@
     color:black;
     border: solid 5px maroon;
     border-radius: 15px;
-    width: 200px;
-    height: 25px;
+    width: 215px;
+    height: 40px;
     margin-top: 45px;
 }
 
@@ -79,4 +121,42 @@
     border-radius: 15px;
     width: 215px;
     height: 40px;
+}
+
+/* Minesweeper Styles */
+#lost {
+    color: white;
+}
+
+
+#box {
+    position: absolute;
+    right: 285px;
+    bottom: 200px;
+    text-align: center;
+}
+
+#field table {
+    border-collapse: collapse;
+    font-size: 150%;
+    font-family: san-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#field table td {
+    background-color: rgb(195, 195, 195);
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    border: 3px solid black;    
+}
+#newGameBtn {
+    width: 100px;
+    height: 30px;
+    background-color:rgb(75, 75, 75);
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
 }

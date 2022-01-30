@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gameStyles.css">
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="gameApp.js"></script>
+    <script type="text/javascript" src="app.js" ></script>
+    <script type="text/javascript" src="gameApp.js" defer></script>
 </head>
 <body>
     <div id="screenTooSmall">
@@ -28,13 +28,23 @@
         </div>
         <div id="gameBackground">
             <div id="selectModeDiv">
-                <button id="easyMode">Easy</button>
-                <button id="mediumMode">Medium</button>
-                <button id="hardmode">Hard</button>
+                <button id="easyMode" onclick="changeModeE()">Easy</button>
+                <button id="mediumMode" onclick="changeModeM()">Medium</button>
+                <button id="hardmode" onclick="changeModeH()">Hard</button>
             </div>
-            <button id="credits">
-                Credits
-            </button>
+            <div id="box">
+                <div id="field">
+                </div>
+                <div id="lost" style="display: none;">
+                    <h3>You got bombed!</h3>
+                    <button id="newGameBtn" type="button" onclick="reload()">Start Again</button>
+                </div>         
+            </div>
+            <button id="startGameBtn" onclick="loadingGame()">Start!</button>
+            <button id="credits" onclick="showCredits()">Credits</button>
+            <p id="creditsP">“Music from https://www.zapsplat.com“ along with  "https://freesvg.org/volume-icon" for the audio icon.</p>
+            <input id="backBtn" type="image" src="assets/backArrow.png" onclick="goBack()"/>
+            <img id="modeImg" src="assets/10x10.PNG" width="275" height="275" alt="Image of board size, which includes 5x5 (easy mode) 10x10 (medium mode) and 24x12 (hard mode)">
         </div>
     </div>
     <input id="audioBtn" type="image" src="assets/audioicon.png" name="audioBtn" class="btTxt submit" onclick="muteAudio()"/>

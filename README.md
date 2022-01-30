@@ -18,7 +18,7 @@ credits:
 
 
 
-
+10,10,25 // 15,15,45
 
 
 
@@ -33,7 +33,6 @@ and a start button
 after start:
 music
 add a reset button
-back button top left
 --------------------------
 strech goals:2
 
@@ -43,6 +42,8 @@ center shows you what the board looks like
 
 --------------------------
 strech goals:3
+after start:
+back button top left
 
 before start:
 3 2player vs mode

@@ -23,6 +23,8 @@ function LoadingAnim() {
 
 // Audio code
 
+audio.volume = 0.2;
+
 if (typeof audio.loop == 'boolean')
 {
     audio.loop = true;
@@ -47,10 +49,4 @@ function muteAudio() {
         audio.play()
     }
 }
-
-//selectMode code
-
-
-
-
-// Minesweeper code
+// Minesweeper code is in gameApps
